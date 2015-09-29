@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titleformat{\section}{\color{brown}\Large\normalfont\bfseries}{\thesection}{1em}{}
+
+% \titleformat{\section}
+% {\color{red}\normalfont\Large\bfseries}
+% {\color{red}\thesection}{1em}{}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	
+	\raggedbottom
+	\pagenumbering{gobble}
+
+	\renewcommand*\rmdefault{iwona}
+	\rmfamily%
+	{\begin{tabular}[c]{l}
+	  	2809-103, Avent Ferry Road \\
+	  	Raleigh, NC - 27606
+	\end{tabular}}\hfill%
+	{\begin{tabular}[c]{c}
+		{\bfseries\Large RAKESH GOPAL KAVODKAR}\\
+		\vspace{-0.1cm}
+		\small LinkedIn: \href{https://www.linkedin.com/in/kavodkar}{https://www.linkedin.com/in/kavodkar}
+	\end{tabular}}\hfill%
+	{\begin{tabular}[c]{r}
+		(919) 771-5917 \\
+		rg.kavodkar@gmail.com
+	\end{tabular}}%
+	
+	\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+	\begin{multicols}{2}
+		\section*{EDUCATION}
+			% NCSU 
+			\vspace{0.2cm}
+			{\bfseries \large North Carolina State University}\hfill Raleigh, NC\newline
+			{\bfseries Master of Science} in {\bfseries Computer Science} \newline
+			{\bfseries GPA:} 3.56 \hfill {\bfseries Expected Graduation:} May 2016\par
+			{\bfseries Course Work:} Automated Learning and Data Analysis, Artificial Intelligence, Graph Data Mining, Advanced Algorithms, Design and Analysis Of Algorithms, Internet Protocols, Advanced Data Structues, Advanced Machine Learning, Foundations of Data Science\newline
+			% RV
+			\par
+			{\bfseries \large R. V. College of Engineering}\hfill Bangalore, India\newline
+			{\bfseries Bachelor of Engineering} in {\bfseries Computer Science} \newline
+			{\bfseries GPA:} 8.99/10 \hfill {\bfseries Graduated:} May 2011
+
+
+		\section*{WORK EXPERIENCE}
+			% SAMSUNG
+			\vspace{0.2cm}
+			{\bfseries SAMSUNG R\&D INSTITUTE}\newline
+			{\bfseries \small Senior Software Engineer}\hfill{June 2013 - May 2014}\newline
+				\textit{Languages/technologies used: Java, Tomcat, NodeJS}\newline
+				{\bfseries Parent Control System}
+				\begin{itemize}[nolistsep,leftmargin=*]
+					\item Worked on the development of a child safety feature on mobile browsers; blocks potentially unsafe sites
+					\item Implemented the category classifier using Naive-Bayes classification for text; developed in Java
+				\end{itemize}
+				{\bfseries News Recommendation System}
+				\begin{itemize}[nolistsep,leftmargin=*]
+					\item Implemented REST services to connect the recommendation module, database and the UI
+				\end{itemize}
+				{\bfseries Webpage Classification}
+				\begin{itemize}[nolistsep,leftmargin=*]
+					\item Implemented a corpus aggregator for the \textit{webpage classifier}; corpus is used to train the classifier
+					\item Designed and implemented a test framework to cross verify the data classified by the classifier module
+				\end{itemize}
+			\vspace{0.3cm}
+
+
+			% CISCO 
+			{\bfseries CISCO SYSTEMS}\newline
+			{\bfseries \small Software Engineer}\hfill{August 2011 - June 2013}\newline			
+				\textit{Languages/technologies used: Java, Tomcat, JavaScript}\newline
+				{\bfseries Prime Infrastructure (PI)}
+				\begin{itemize}[nolistsep,leftmargin=*]
+					\item Worked on \textit{Config Templates}, a set of features that deploys configuration(s) over the network devices
+					\item Developed \textit{Undeploy Template}, a feature that removes a configuration from the devices(s)
+					\item Designed and implemented \textit{Global Objects}, an intermediate entity consumed by the \textit{Config Templates}
+					\item Worked with several customers on feature enhancements and product issues
+				\end{itemize}
+			\vspace{0.3cm}
+				
+			% CISCO 
+			{\bfseries ICIDIGITAL}\newline
+			{\bfseries \small Software Development Intern}\hfill{June 2015 - Present}\newline			
+				\textit{Languages/technologies used: Java, JSP, AEM, LaTeX}\newline
+				{\bfseries Prime Infrastructure (PI)}
+				\begin{itemize}[nolistsep,leftmargin=*]
+					\item Worked on developing interactive training exercises on Adobe Experience Manager (for ICIDigital use)
+					\item Wrote a multiversional LaTeX document for the training manual for version 5.6 and 6.1
+				\end{itemize}
+
+		\columnbreak
+
+		\section*{TECHNICAL SKILLS}
+			\begin{itemize}[nolistsep,leftmargin=*]
+				\item \textbf{Languages}: Java, C/C++
+				\item \textbf{Scripts:} Python, JavaScript, R, NodeJS
+				\item \textbf{Environments}: IntelliJ Suite, Eclipse, Visual Studio
+				\item \textbf{Operating Systems:} Windows, Linux, Mac OS
+			\end{itemize}
+
+		\section*{ACADEMIC PROJECTS}
+			\vspace{-0.1cm}
+			\begin{itemize}[nolistsep,leftmargin=*]
+				\item \textbf{Tweet Analyzer}: Built as a socked oriented client-server architecture in NodeJS (using Express, Socket.IO); Tweets tracked and streamed based on keywords; Analyze the general sentiment behind the tweet; \textbf{[Spring 2015]}
+				\item \textbf{Centralized Index File Sharing}: A system for sharing RFCs among peers; RFC and peer info at the central node (server); File transfer as a peer2peer exchange; developed using Python sockets; \textbf{[Spring 2015]}
+				\item \textbf{FTP using Go-Back-N ARQ scheme}: File data encapsulated over UDP packet; Go-Back-N scheme used for packet transfer; False packet loss introduced based on random probability; developed using Python sockets; \textbf{[Spring 2015]}
+				\item \textbf{Top-K twitter words}: Apache Storm (trident) used for real time stream analytics; Apache Lucene used for text preprocessing; Count-Min sketches used as data-structure for keeping the word count; developed in Java; \textbf{[Spring 2015]}
+				\item \textbf{Loan Default Prediction and Loss Estimation}: A system which predicts whether granting a loan to a customer will result in defaulting, given the customer's transaction details; project idea from Kaggle, developed in R; \textbf{[Fall 2014]}
+				\item \textbf{Speaker-Listener Label Propagation (SLPA) Algorithm}: Implementation of the algorithm from the paper Towards Linear Time Overlapping Community Detection in Social Networks by Jierui Xie and Boleslaw Szymanski, that detects overlapping communities in a graph; developed in Java; \textbf{[Fall 2014]}
+				\item \textbf{Event Detection in Time Series of Mobile Communication Graphs (paper implementation)}: Detects the change points or anomalies in a time varying graph; anomalies refers to surges in traffic; developed in R using sna and igraph; \textbf{[Fall 2014]}
+				\item \textbf{Virus Propagation Simulation}: Estimate the Effective Virus Strength based on infection and healing probabilities; identify the nodes whose removal causes the max Eigen Drop for immunization; developed in Python; \textbf{[Fall 2014]}
+				\item \textbf{Natural Language Processing using Stanford NER}: Perform NLP on Jane Austen's Emma; identify the features belonging to person, location, organization and other categories; developed in Java; \textbf{ [Fall 2014]}
+				\item \textbf{Tutorial on Trees (data-structure)}: Implementation of a web-based tutorial on different types of binary trees; Developed using Java, Adobe Flash, HTML 4.0, CSS and JavaScript; \textbf{ [Undergraduate: Jan - Jun 2011]}
+				\item \textbf{Connect-N Game}: Extension of the classic board game `4-in-a-row'; Flexibility to increase the board size and the number of coins in a row; Developed using Java; \textbf{[Undergraduate: Aug - Dec 2010]}
+			\end{itemize}
+		
+	\end{multicols}
+\end{document}
