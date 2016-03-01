@@ -1,4 +1,4 @@
-\documentclass[11pt, letterpaper]{article}
+\documentclass[10pt, letterpaper]{article}
 \usepackage[margin=1.5cm]{geometry}
 \usepackage{multicol}
 \usepackage{blindtext}
@@ -21,7 +21,7 @@
 	\raggedbottom
 	\pagenumbering{gobble}
 
-	\renewcommand*\rmdefault{iwona}
+% 	\renewcommand*\rmdefault{iwona}/
 	\rmfamily%
 	{\begin{tabular}[c]{l}
 	  	2809-103, Avent Ferry Road \\
@@ -42,11 +42,11 @@
 	\begin{multicols}{2}
 		\section*{EDUCATION}
 			% NCSU 
-			\vspace{0.2cm}
+			%\vspace{0.2cm}
 			{\bfseries \large North Carolina State University}\hfill Raleigh, NC\newline
 			{\bfseries Master of Science} in {\bfseries Computer Science} \newline
-			{\bfseries GPA:} 3.56 \hfill {\bfseries Expected Graduation:} May 2016\par
-			{\bfseries Course Work:} Automated Learning and Data Analysis, Artificial Intelligence, Graph Data Mining, Advanced Algorithms, Design and Analysis Of Algorithms, Internet Protocols, Advanced Data Structues, Advanced Machine Learning, Foundations of Data Science\newline
+			{\bfseries GPA:} 3.67 \hfill {\bfseries Expected Graduation:} May 2016\par
+			{\bfseries Course Work:} Automated Learning and Data Analysis, Artificial Intelligence, Graph Data Mining, Advanced Algorithms, Design and Analysis Of Algorithms, Internet Protocols, Advanced Data Structues, Advanced Machine Learning, Foundations of Data Science, Object Oriented Design and Development\newline
 			% RV
 			\par
 			{\bfseries \large R. V. College of Engineering}\hfill Bangalore, India\newline
@@ -54,7 +54,7 @@
 			{\bfseries GPA:} 8.99/10 \hfill {\bfseries Graduated:} May 2011
 
 		\section*{TECHNICAL SKILLS}		
-			\vspace{0.2cm}
+			%\vspace{0.2cm}
 			\begin{itemize}[nolistsep,leftmargin=*]
 				\item \textbf{Languages}: Java, C/C++
 				\item \textbf{Scripts:} Python, JavaScript, R, NodeJS
@@ -68,11 +68,11 @@
 			% ICIDIGITAL 
 			{\bfseries ICIDIGITAL}\newline
 			{\bfseries \small Software Development Intern}\hfill{June 2015 - Present}\newline			
-				\textit{Languages/technologies used: Java, JSP, AEM, LaTeX}\newline
+				\textit{Languages/technologies used: Java, JSP, AEM, LaTeX, HTML, Bootstrap}\newline
 				{\bfseries Prime Infrastructure (PI)}
 				\begin{itemize}[nolistsep,leftmargin=*]
-					\item Worked on developing interactive training exercises on Adobe Experience Manager (for ICIDigital use)
-					\item Wrote a multiversional LaTeX document for the training manual for version 5.6 and 6.1
+					\item Working on a step-by-step, interactive training material and walkthrough guide for Adobe Experience Manager (previously, Day CQ). 
+					\item Wrote a multiversional LaTeX document for the training manual for AEM version 5.6 and 6.1
 				\end{itemize}
 
 
@@ -95,7 +95,7 @@
 					\item Implemented a corpus aggregator for the \textit{webpage classifier}; corpus is used to train the classifier
 					\item Designed and implemented a test framework to cross verify the data classified by the classifier module
 				\end{itemize}
-			\vspace{0.3cm}
+			\vspace{0.2cm}
 
 			\columnbreak 
 			% CISCO 
@@ -113,19 +113,21 @@
 
 		\section*{ACADEMIC PROJECTS}
 			
-			\vspace{0.2cm}
+			%\vspace{0.2cm}
 			\begin{itemize}[nolistsep,leftmargin=*]
-				\item \textbf{Tweet Analyzer}: \textit{NodeJS, HTML} \hfill [Spring 15]\newline Built as a socked oriented client-server architecture using Express, Socket.IO; Tweets tracked and streamed based on keywords; Analyze the \textit{sentiment};
-				\item \textbf{Centralized Index File Sharing}: \textit{Python} \hfill [Spring 15]\newline A system for sharing RFCs among peers; RFC and peer info at the central node (server); File transfer as a peer2peer exchange; 
-				\item \textbf{Go-Back-N ARQ scheme}: \textit{Python} \hfill [Spring 15]\newline File data encapsulated over UDP packet; Go-Back-N scheme used for packet transfer; False packet loss introduced based on random probability;
-				\item \textbf{Top-K twitter words}: \textit{Java} \hfill [Spring 2015]\newline Apache Storm (trident) used for real time stream analytics; Apache Lucene used for text preprocessing; Count-Min sketches to keep the word count;
-				\item \textbf{Loan Default Prediction and Estimation}: \textit{R} \hfill[Fall 14]\newline A system which predicts whether granting a loan to a customer will result in defaulting, given the customer's transaction details; 
+				\item \textbf{School Portal}: \textit{Rails, HTML, Bootstrap} \hfill [Spring'16] \newline A school portal built on top of rails that follows the MVC architecture; Features include course creation, enrollment, messaging service, etc from the perspectives of students, instructors and admins;
+				\item \textbf{Reinforcement learning on Othello}: \textit{Java} \hfill [Fall'15]\newline Built a reinforcement learning agent for the board game Othello. Used neural networks as the function approximator, using the Encog library for Java.
+				\item \textbf{Tweet Analyzer}: \textit{NodeJS, HTML} \hfill [Spring'15]\newline Built as a socked oriented client-server architecture using Express, Socket.IO; Tweets tracked and streamed based on keywords; Analyze the \textit{sentiment};
+				\item \textbf{Centralized Index File Sharing}: \textit{Python} \hfill [Spring'15]\newline A system for sharing RFCs among peers; RFC and peer info at the central node (server); File transfer as a peer2peer exchange; 
+				\item \textbf{Go-Back-N ARQ scheme}: \textit{Python} \hfill [Spring'15]\newline File data encapsulated over UDP packet; Go-Back-N scheme used for packet transfer; False packet loss introduced based on random probability;
+				\item \textbf{Top-K twitter words}: \textit{Java} \hfill [Spring'2015]\newline Apache Storm (trident) used for real time stream analytics; Apache Lucene used for text preprocessing; Count-Min sketches to keep the word count;
+				\item \textbf{Loan Default Prediction and Estimation}: \textit{R} \hfill[Fall'14]\newline A system which predicts whether granting a loan to a customer will result in defaulting, given the customer's transaction details; 
 				%\item \textbf{Speaker-Listener Label Propagation (SLPA) Algorithm}: Implementation of the algorithm from the paper Towards Linear Time Overlapping Community Detection in Social Networks by Jierui Xie and Boleslaw Szymanski, that detects overlapping communities in a graph; developed in Java; \textbf{[Fall 2014]}
 				%\item \textbf{Event Detection in Time Series of Mobile Communication Graphs (paper implementation)}: Detects the change points or anomalies in a time varying graph; anomalies refers to surges in traffic; developed in R using sna and igraph; \textbf{[Fall 2014]}
-				\item \textbf{Virus Propagation Simulation}: \textit{Python} \hfill [Fall 14]\newline Estimate the Effective Virus Strength based on infection and healing probabilities; identify nodes whose removal causes the max Eigen Drop for immunization;
+				% \item \textbf{Virus Propagation Simulation}: \textit{Python} \hfill [Fall 14]\newline Estimate the Effective Virus Strength based on infection and healing probabilities; identify nodes whose removal causes the max Eigen Drop for immunization;
 				\item \textbf{NLP using Stanford NER}: \textit{Java} \hfill[Fall 14]\newline Perform NLP on Jane Austen's Emma; identify the features belonging to person, location, organization and other categories; 
-				\item \textbf{Tutorial on Trees}: \textit{Java, Web 3.0} \hfill[UG: 2011]\newline Implementation of a web-based tutorial on different types of binary trees; 
-				\item \textbf{Connect-N Game}: \textit{Java} \hfill [UG 2010] Extension of the classic board game `4-in-a-row'; Flexibility to increase the board size and the number of coins in a row;
+				\item \textbf{Tutorial on Trees}: \textit{Java, HTML} \hfill[UG: 2011]\newline Implementation of a web-based tutorial on different types of binary trees; 
+				\item \textbf{Connect-N Game}: \textit{Java} \hfill [UG 2010]\newline Extension of the classic board game `4-in-a-row'; Flexibility to increase the board size and the number of coins in a row;
 			\end{itemize}
 		
 	\end{multicols}
